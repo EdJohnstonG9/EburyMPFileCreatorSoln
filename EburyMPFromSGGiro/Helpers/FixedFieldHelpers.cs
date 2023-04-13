@@ -11,6 +11,42 @@ using System.Threading.Tasks;
 namespace EburyMPFromSGGiro.Helpers
 {
     /// <summary>
+    /// Converts money amount as Decimal / text number of cents
+    /// </summary>
+    internal class PennyConverter : ConverterBase
+    {
+        string _format;
+        public PennyConverter(int length = 10)
+        {
+            _format = new string('0', length - 1) + "#";
+        }
+        public override object StringToField(string from)
+        {
+            if (decimal.TryParse(from, out decimal output))
+            {
+                output = output / 100;
+                return output;
+            }
+            else
+            {
+                throw new ArgumentException($"{typeof(PennyConverter)}\tCould not convert to money:{from}");
+            }
+        }
+        public override string FieldToString(object from)
+        {
+            if (from is decimal decFrom)
+            {
+                if (ulong.TryParse((decFrom * 100m).ToString("0#"), out ulong pennies))
+                {
+                    var output =  pennies.ToString(_format);
+                    return output;
+                }
+            }
+            throw new ArgumentException($"{typeof(PennyConverter)}\tCould not convert to money:{from}");
+        }
+    }
+
+    /// <summary>
     /// Tunrs Int into string following Format i.e. 00# for zero padded 3 digits
     /// </summary>
     internal class ZeroPadUIntConverter : ConverterBase
