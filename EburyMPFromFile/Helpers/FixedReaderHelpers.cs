@@ -7,7 +7,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 
-namespace EburyMPFromSGGiro.Helpers
+namespace EburyMPFromFile.Helpers
 {
     public static class FixedReaderHelpers
     {

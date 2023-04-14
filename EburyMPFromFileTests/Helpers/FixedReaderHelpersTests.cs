@@ -1,15 +1,15 @@
 ﻿using Xunit;
-using EburyMPFromSGGiro.Helpers;
+using EburyMPFromFile.Helpers;
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using EburyMPFromSGGiro.Models;
 using System.Diagnostics;
+using EburyMPFromFile.Models.SGGiro;
 
-namespace EburyMPFromSGGiro.Helpers.Tests
+namespace EburyMPFromFile.Helpers.Tests
 {
     public class FixedReaderHelpersTests
     {

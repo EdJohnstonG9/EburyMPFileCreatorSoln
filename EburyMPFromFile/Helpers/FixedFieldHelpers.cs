@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EburyMPFromSGGiro.Helpers
+namespace EburyMPFromFile.Helpers
 {
     /// <summary>
     /// Converts money amount as Decimal / text number of cents

@@ -11,9 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EburyMPFileCreator.Tests.xU
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EburyMPFileCreator.Core.Tests.xUnit", "EburyMPFileCreator.Core.Tests.xUnit\EburyMPFileCreator.Core.Tests.xUnit.csproj", "{A0E74B30-8A69-4A50-A844-6B3E921214C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EburyMPFromSGGiro", "EburyMPFromSGGiro\EburyMPFromSGGiro.csproj", "{46AB8D64-2CB9-4229-A2AD-679BE6F45B12}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EburyMPFromFile", "EburyMPFromFile\EburyMPFromFile.csproj", "{46AB8D64-2CB9-4229-A2AD-679BE6F45B12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EburyMPFromSGGiroTests", "EburyMPFromSGGiroTests\EburyMPFromSGGiroTests.csproj", "{15EC927A-06AB-4D0E-9F11-55DDC5DBC1B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EburyMPFromFileTests", "EburyMPFromFileTests\EburyMPFromFileTests.csproj", "{15EC927A-06AB-4D0E-9F11-55DDC5DBC1B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

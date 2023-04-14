@@ -1,4 +1,4 @@
-﻿using EburyMPFromSGGiro.Helpers;
+﻿using EburyMPFromFile.Helpers;
 
 using FileHelpers;
 
@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EburyMPFromSGGiro.Models
+namespace EburyMPFromFile.Models.SGGiro
 {
     [FixedLengthRecord()]
     public class GiroFooterModel
