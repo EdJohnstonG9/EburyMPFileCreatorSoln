@@ -12,7 +12,7 @@ namespace EburyMPFromFileTests.Helpers
 {
     public class CsvFileHelpersTests
     {
-        string _path = @"D:\VisualStudio\Source\Repos\EburyMPFileCreator\EburyMPFileCreator.Core.Tests.xUnit\TestData\";
+        string _path = @"G:\Shared drives\MP - High Wycombe - Data\CSV File Examples";
         public CsvFileHelpersTests()
         {
 
