@@ -1,11 +1,11 @@
 ﻿
 using CsvHelper.Configuration.Attributes;
 
-using EburyMPFileCreator.Core.Helpers;
+using EburyMPFromFile.Helpers;
 
 using System;
 
-namespace EburyMPFileCreator.Core.Models
+namespace EburyMPFromFile.Models
 {
     //[DelimitedRecord(","), IgnoreFirst(1),]
     public class MassPaymentFileModel
@@ -28,7 +28,7 @@ namespace EburyMPFileCreator.Core.Models
         public string SwiftCode { get; set; }
         public string PaymentReference { get; set; }
         public string BankCode { get; set; }
-        [TypeConverter(typeof(EmpDateConverter),"ddMMyy")]
+        [TypeConverter(typeof(EmpDateConverter), "ddMMyy")]
         public DateTime ValueDate { get; set; }
         public string RemitterName { get; set; }
         public string RemitterAddressLine1 { get; set; }

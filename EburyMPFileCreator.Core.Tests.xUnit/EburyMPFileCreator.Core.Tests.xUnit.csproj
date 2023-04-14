@@ -32,4 +32,8 @@
     <ProjectReference Include="..\EburyMPFileCreator.Core\EburyMPFileCreator.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+  </ItemGroup>
+
 </Project>

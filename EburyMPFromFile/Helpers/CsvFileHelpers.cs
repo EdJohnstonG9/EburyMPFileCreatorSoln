@@ -1,7 +1,7 @@
 ﻿using CsvHelper;
 using CsvHelper.Configuration;
 
-using EburyMPFileCreator.Core.Models;
+using EburyMPFromFile.Models;
 
 using System;
 using System.Collections.Generic;
@@ -12,7 +12,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
-namespace EburyMPFileCreator.Core.Helpers
+namespace EburyMPFromFile.Helpers
 {
     public static class CsvFileHelpers
     {
@@ -75,7 +75,7 @@ namespace EburyMPFileCreator.Core.Helpers
             csvConfig.MissingFieldFound = null;
             csvConfig.HeaderValidated = null;
             csvConfig.IgnoreBlankLines = true;
-            csvConfig.ShouldSkipRecord = (records) => records.Row [0].ToString() == "" && records.Row[1].ToString() == "";
+            csvConfig.ShouldSkipRecord = (records) => records.Row[0].ToString() == "" && records.Row[1].ToString() == "";
             //csvConfig.TypeConverterOptionsCache.GetOptions<DateTime>().Formats = new[] { "dd/MM/yyyy" };
             return csvConfig;
         }

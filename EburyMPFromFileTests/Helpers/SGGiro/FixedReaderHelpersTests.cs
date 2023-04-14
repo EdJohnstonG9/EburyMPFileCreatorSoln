@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Diagnostics;
 using EburyMPFromFile.Models.SGGiro;
 
-namespace EburyMPFromFile.Helpers.Tests
+namespace EburyMPFromFileTests.Helpers.SGGiro
 {
     public class FixedReaderHelpersTests
     {
@@ -33,7 +33,7 @@ namespace EburyMPFromFile.Helpers.Tests
             Assert.NotNull(result);
             Assert.Equal((uint)1, result.RecordType);
 
-            var output = result.FixedRecordWriteString<GiroHeaderModel>();
+            var output = result.FixedRecordWriteString();
             Assert.Equal(_exampleFileLines[0], output);
 
         }
@@ -46,7 +46,7 @@ namespace EburyMPFromFile.Helpers.Tests
             Assert.NotNull(result);
             Assert.Equal((uint)20, result.RecordType);
 
-            var output = result.FixedRecordWriteString<GiroFooterModel>();
+            var output = result.FixedRecordWriteString();
             Assert.Equal(_exampleFileLines[_exampleFileLines.Length - 1], output);
 
         }
@@ -62,8 +62,8 @@ namespace EburyMPFromFile.Helpers.Tests
                 Assert.NotNull(result);
                 Assert.Equal((uint)10, result.RecordType);
 
-                var output = result.FixedRecordWriteString<GiroItemModel>();
-                Debug.Print (output);
+                var output = result.FixedRecordWriteString();
+                Debug.Print(output);
                 Assert.Equal(_exampleFileLines[i], output);
             }
 

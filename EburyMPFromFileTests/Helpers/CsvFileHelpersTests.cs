@@ -1,14 +1,14 @@
 ﻿using Xunit;
-using EburyMPFileCreator.Core.Helpers;
 
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using EburyMPFileCreator.Core.Models;
+using EburyMPFromFile.Models;
+using EburyMPFromFile.Helpers;
 
-namespace EburyMPFileCreator.Core.Helpers.Tests
+namespace EburyMPFromFileTests.Helpers
 {
     public class CsvFileHelpersTests
     {
