@@ -23,7 +23,7 @@ namespace EburyMPFromFile.Helpers.GiroHelpers
             output.BeneficiaryCountry = giro.BeneficiaryAddress3;
             output.PaymentCurrency = giro.PaymentCcy;
             output.PaymentAmount = giro.PaymentAmount;
-            output.SettlementCurrency = giro.PaymentCcy;
+            output.SettlementCurrency = giro.PaymentCcy;//May require a manual entry?
             output.BankName = "";
             output.BankAddress1 = "";
             output.BankCity = "";
